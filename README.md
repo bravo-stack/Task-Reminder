@@ -1,3 +1,10 @@
+# App preview
+!["Clean Ui"](./public/preview1.png)
+
+### Trying to add a task
+!["Add task"](./public/preview2.png)
+### When there's no task
+!["No Task"](./public/preview3.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
