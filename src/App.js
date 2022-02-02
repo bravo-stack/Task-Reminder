@@ -2,7 +2,9 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks"
 import Notask from "./components/Notask";
 import Addtask from "./components/Addtask";
+import Footer from "./components/Footer";
 import {useState, useEffect} from "react"
+
  
 function App() {
 
@@ -100,6 +102,7 @@ function App() {
         ) : (
           <Notask />
         )}
+        <Footer />
     </div>
   );
 }
