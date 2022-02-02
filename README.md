@@ -46,7 +46,40 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## JSON Server
+### `npm install json-server --save`
+Installs JSON Server
+a db.json file with some data, gets created
+
+### `json-server --watch db.json --port 5000`
+
+Starts JSON Server.
+Now if you go to http://localhost:5000/tasks (because, i modified my `db.json` file to contain a single object called `tasks`), you'll get this
+```
+[
+  {
+    "text": "playing chess",
+    "day": "tonight 8pm",
+    "reminder": true,
+    "id": 1
+  },
+  {
+    "text": "add new functionality",
+    "day": "today 4pm",
+    "reminder": true,
+    "id": 2
+  }
+]
+```
+By the way, i created an npm script for that `"server": "json-server --watch db.json --port 5000"`
+This way, i get to run `npm run server` and the JSON Server is up and running, saving me a whole lotta time and stress.
+<br>
+To learn more about the 'JSON Server' Package, 
+checkout: [npmjs.com/package/json-server](https://www.npmjs.com/package/json-server)
+<br>
+
+## Create-React-App
+#### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
